@@ -4,8 +4,12 @@
 
 {% block content %}
 
-    <h1>News page template</h1>
+    <h3>Последние статьи:</h3>
 
-    {{ news }}
+    <ul>
+        {% for item in news %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
 
 {% endblock content %}

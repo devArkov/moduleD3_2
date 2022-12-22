@@ -7,6 +7,7 @@ class NewsListView(ListView):
     model = Post
     template_name = 'news_list.html'
     context_object_name = 'news'
+    queryset = Post.objects.order_by('-created_at')
 
 
 class NewsDetailView(DetailView):
