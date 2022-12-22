@@ -9,7 +9,7 @@ CORE_DIR = os.path.join(BASE_DIR, 'core')
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-nrb_7$6tz(b!gaa)monv7*0v-=&+7x6+x^qz!@dy6s&!1hbw8+'
+from env.vars import SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
